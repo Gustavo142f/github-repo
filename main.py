@@ -159,6 +159,50 @@ def teste_modulo_5():
         return False
 
 
+def teste_modulo_6():
+    """Testa o módulo de Análise de Temperaturas."""
+    print("\n" + "=" * 60)
+    print("TESTE 6: Análise de Temperaturas")
+    print("=" * 60)
+    
+    try:
+        sys.path.insert(0, os.path.join(os.getcwd(), '06_analise_temperaturas'))
+        from classificacao_temperatura import classificar_temperatura, analisar_estado_saude, eh_febricitante
+        from analise_grupo import calcular_estatisticas_temperatura, processar_lote_temperaturas
+        
+        # Testes de classificação
+        assert classificar_temperatura(36.5) == "Temperatura normal"
+        assert classificar_temperatura(37.5) == "Estado febril"
+        assert classificar_temperatura(38.5) == "Com febre"
+        assert classificar_temperatura(39.5) == "Febre alta"
+        
+        # Testes de febre
+        assert eh_febricitante(36.5) == False
+        assert eh_febricitante(38.0) == True
+        
+        # Testes de análise de saúde
+        resultado = analisar_estado_saude(38.5)
+        assert resultado['status'] == "AVISO"
+        
+        # Testes de estatísticas
+        temps = [36.5, 37.8, 38.2, 36.9]
+        stats = calcular_estatisticas_temperatura(temps)
+        assert stats['total_pessoas'] == 4
+        assert stats['febricitantes'] == 2
+        
+        print("✅ Classificação de temperatura: OK")
+        print("✅ Verificação de febre: OK")
+        print("✅ Análise de estado de saúde: OK")
+        print("✅ Cálculo de estatísticas: OK")
+        print("✅ Processamento em lote: OK")
+        print("\n✨ Módulo 6 passou em todos os testes!")
+        
+        return True
+    except Exception as e:
+        print(f"❌ Erro no Módulo 6: {e}")
+        return False
+
+
 def teste_utilitarios():
     """Testa o módulo de utilitários."""
     print("\n" + "=" * 60)
@@ -203,6 +247,7 @@ def main():
         "Módulo 3: Entrada e Saída": teste_modulo_3(),
         "Módulo 4: Cálculos Comerciais": teste_modulo_4(),
         "Módulo 5: Operações Matemáticas": teste_modulo_5(),
+        "Módulo 6: Análise de Temperaturas": teste_modulo_6(),
         "Utilitários": teste_utilitarios(),
     }
     

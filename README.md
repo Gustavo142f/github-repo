@@ -11,7 +11,7 @@ programacao-python/
 ├── 03_entrada_e_saida/         # Input/Output do usuário
 ├── 04_calculos_comerciais/     # Aplicações práticas (compras, totais)
 ├── 05_operacoes_matematicas/   # Operações avançadas com Math
-├── tests/                       # Testes dos módulos
+├── 06_analise_temperaturas/    # Loops, condicionais e aplicação prática
 ├── utils/                       # Utilitários compartilhados
 ├── README.md
 └── requirements.txt
@@ -43,6 +43,13 @@ programacao-python/
 - Potência e expoentes
 - Expoentes fracionários
 - Uso do módulo math
+
+### 6. Análise de Temperaturas (Loops e Condicionais)
+- Loops: for e while
+- Condicionais: if, elif, else
+- Coleta de dados em grupo
+- Cálculo de estatísticas
+- Aplicação prática em análise de saúde
 
 ## 🚀 Como Usar
 

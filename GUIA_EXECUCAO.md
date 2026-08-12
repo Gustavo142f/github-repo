@@ -161,6 +161,32 @@ math.sqrt(numero)               # Raiz quadrada
 
 ---
 
+### 6️⃣ Análise de Temperaturas (Loops e Condicionais)
+
+```bash
+cd 06_analise_temperaturas
+python exemplo_uso.py
+```
+
+**O que você aprenderá:**
+- Loops: `for` e `while`
+- Condicionais: `if`, `elif`, `else`
+- Coleta de dados iterativa
+- Cálculo de estatísticas e média
+
+**Conteúdo:**
+```python
+for i in range(quantidade):
+    temperatura = float(input("Digite a temperatura: "))
+    if temperatura < 37.2:
+        print("Temperatura normal")
+    elif temperatura <= 38:
+        print("Estado febril")
+    # ... mais condições
+```
+
+---
+
 ## Executando Todos os Módulos
 
 ### No Windows (CMD ou PowerShell):

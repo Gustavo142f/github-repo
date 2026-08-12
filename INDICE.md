@@ -101,6 +101,26 @@ Potências, raízes e uso da biblioteca `math`.
 
 ---
 
+### 🌡️ Módulo 6: Análise de Temperaturas
+**Pasta:** [`06_analise_temperaturas/`](06_analise_temperaturas/)
+
+Loops, condicionais e aplicação prática em análise de saúde.
+
+| Arquivo | Função |
+|---------|--------|
+| `classificacao_temperatura.py` | `classificar_temperatura()`, `analisar_estado_saude()`, `eh_febricitante()` |
+| `analise_grupo.py` | `calcular_estatisticas_temperatura()`, `analisar_grupo_pessoas()`, `processar_lote_temperaturas()` |
+| `exemplo_uso.py` | ✨ **Execute este arquivo** |
+
+**Conceitos:**
+- Loops: `for` e `while`
+- Condicionais: `if`, `elif`, `else`
+- Coleta de dados iterativa
+- Cálculo de estatísticas e média
+- Aplicação prática em análise de saúde
+
+---
+
 ## 🛠️ Utilitários
 
 **Pasta:** [`utils/`](utils/)
