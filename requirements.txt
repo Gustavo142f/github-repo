@@ -1,0 +1,15 @@
+# Requirements for Programação em Python
+
+# Este projeto usa apenas a biblioteca padrão do Python
+# Nenhuma dependência externa é necessária
+
+# Para testes (opcional):
+# pytest==7.4.0
+# pytest-cov==4.1.0
+
+# Para linting e formatação (opcional):
+# pylint==2.17.4
+# black==23.7.0
+# flake8==6.0.0
+
+# Python versão mínima: 3.8+
